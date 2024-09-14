@@ -1,5 +1,5 @@
 matplotlib
-numpy
+numpy==1.21.0
 notebook
 tensorflow-model-optimization
 tensorflow==2.8.0
