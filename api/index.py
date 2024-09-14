@@ -17,7 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("../models/1.keras")
+MODEL = tf.keras.models.load_model("models/1.keras")
 CLASS_NAMES = ["HDPE (High-Density Polyethylene)", "OTHERS", "PET (polyethylene terephthalate)", "PP (polypropylene)", "PVC (Polyvinyl chloride)"]
     
 @app.get("/ping")
