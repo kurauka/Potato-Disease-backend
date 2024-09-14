@@ -20,6 +20,10 @@ app.add_middleware(
 MODEL = tf.keras.models.load_model("../models/1.keras")
 CLASS_NAMES = ["HDPE (High-Density Polyethylene)", "OTHERS", "PET (polyethylene terephthalate)", "PP (polypropylene)", "PVC (Polyvinyl chloride)"]
 
+@app.get("/")
+async def root():
+    return {"message": "Welcome to FastAPI on Vercel!"}
+    
 @app.get("/ping")
 async def ping():
     return {"message": "Hello, Badi"}
